@@ -32,3 +32,4 @@ python3 pathfinding.py
 - Add more kinds of pathfinding (A*, Dijkstra's, DFS, etc.)
 - Save files so mazes created won't be lost
 - Animate path reaching target
+- Add or create a maze generating algorithm (growing tree, maybe something custom)
