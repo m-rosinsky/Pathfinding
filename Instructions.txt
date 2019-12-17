@@ -1,0 +1,21 @@
+Start-up Instructions
+
+1) Open Terminal / Command Prompt
+
+2) Install pygame
+  $python3 -m pip install -U pygame --user
+  
+3) Run
+  $python3 pathfinding.py
+  
+How to Use:
+- Drag with left mouse button to create walls
+- Drag with right mouse button to erase walls
+- Press Space to reset grid
+- Press Return to run pathfinding algorithm
+- Click anywhere to clear the path after it has been run
+
+- Note the algorithm will not run if there is no solution. The console will simply print "No Solution Possible"
+
+Enjoy!
+Email me at michael.rosinsky@uconn.edu with any questions.
