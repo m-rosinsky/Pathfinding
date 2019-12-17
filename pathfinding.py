@@ -3,13 +3,13 @@ import time
 import collections
 from color_sheet import *
  
-grid_square_width = 40
-grid_square_height = 40
+grid_square_width = 20
+grid_square_height = 20
 
 grid_columns = 21
 grid_rows = 21
  
-grid_margin = 4
+grid_margin = 2
 grid_margin_color = blue
 
 grid_array = []
