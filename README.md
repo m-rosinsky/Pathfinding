@@ -1,7 +1,7 @@
 # Pathfinding
 Showcasing pathfinding Algorithms using Pygame
 
-![img](https://i.imgur.com/z9UNlez.png)
+![img](https://i.imgur.com/brAlI2n.png)
 
 # Start-up Instructions
 1) Install pygame
