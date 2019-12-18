@@ -28,8 +28,12 @@ python3 pathfinding.py
 - Created the skeleton of the visualization
 - Added Breadth First Search pathfinding
 
+## 12/17/2019
+- Animated path reaching its target
+
 # Future Plans
 - Add more kinds of pathfinding (A*, Dijkstra's, DFS, etc.)
 - Save files so mazes created won't be lost
-- Animate path reaching target
+- ~~Animate path reaching target~~
 - Add or create a maze generating algorithm (growing tree, maybe something custom)
+- Animate nodes being searching during search process
