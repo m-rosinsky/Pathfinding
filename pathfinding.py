@@ -3,14 +3,13 @@ import time
 import collections
 from color_sheet import *
  
-grid_square_width = 20
-grid_square_height = 20
+grid_square_width = 25
+grid_square_height = 25
 
-grid_columns = 21
-grid_rows = 21
+grid_columns = 20
+grid_rows = 20
  
 grid_margin = 2
-grid_margin_color = blue
 
 grid_array = []
 for row in range(grid_columns):
@@ -23,14 +22,14 @@ current_x = 1
 current_y = 1
 grid_array[current_x][current_y] = 2
 
-end_x = 19
-end_y = 19
+end_x = grid_columns-2
+end_y = grid_rows-2
 grid_array[end_x][end_y] = 3
  
 pygame.init()
  
-window_height = (grid_square_width * grid_columns) + (grid_margin * grid_columns) + grid_margin
-window_width = (grid_square_height * grid_rows) + (grid_margin * grid_rows) + grid_margin
+window_height = (grid_square_height * grid_rows) + (grid_margin * grid_rows) + grid_margin
+window_width = (grid_square_width * grid_columns) + (grid_margin * grid_columns) + grid_margin
 screen = pygame.display.set_mode((window_width,window_height))
 
 grid_drawn = 0
@@ -105,6 +104,14 @@ def createPath():
         for square in l:
             if grid_array[square[0]][square[1]] != 2 and grid_array[square[0]][square[1]] != 3:
                 grid_array[square[0]][square[1]] = 4
+                pygame.event.poll()
+                pygame.draw.rect(screen,
+                             path_color,
+                             [(grid_margin + grid_square_width) * square[1] + grid_margin,
+                              (grid_margin + grid_square_height) * square[0] + grid_margin,
+                              grid_square_width,
+                              grid_square_height])
+                pygame.display.update()
 
 while running:
     for event in pygame.event.get():
@@ -146,15 +153,15 @@ while running:
 
 
     # Draw the grid
-    if grid_drawn == 0:
+    if grid_drawn == 0 or grid_drawn == 1:
         screen.fill(fill_color)
         drawGrid()
         grid_drawn = 1
 
  
-    clock.tick(120)
- 
+    clock.tick(160)
+
     pygame.display.flip()
- 
+  
 
 pygame.quit()
