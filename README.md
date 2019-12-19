@@ -31,6 +31,10 @@ python3 pathfinding.py
 ## 12/17/2019
 - Animated path reaching its target
 
+## 12/18/2019
+- Restructured code into a cleaner version
+- Shoved grid properties and methods into a class instead of having them hang out in global
+
 # Future Plans
 - Add more kinds of pathfinding (A*, Dijkstra's, DFS, etc.)
 - Save files so mazes created won't be lost
