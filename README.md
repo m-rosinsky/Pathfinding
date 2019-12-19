@@ -24,14 +24,14 @@ python3 pathfinding.py
 
 # Version History / Changelog
 
-## 12/16/2019
+### 12/16/2019
 - Created the skeleton of the visualization
 - Added Breadth First Search pathfinding
 
-## 12/17/2019
+### 12/17/2019
 - Animated path reaching its target
 
-## 12/18/2019
+### 12/18/2019
 - Restructured code into a cleaner version
 - Shoved grid properties and methods into a class instead of having them hang out in global
 
